@@ -295,7 +295,28 @@ p{
     .homepage_container{
     }
 }
+.sidebar_mobile_container{
+    display: none;
+}
 @media screen and (max-width: 760px){
+    .sidebar_mobile_container{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        .name_container{
+            h2{
+                font-family: var(--karla);
+                font-size: 30px;
+                color: var(--blue_color);
+            }
+        }
+        .open_off_container{
+            .menuicon{
+                font-size: 35px;
+                transition: .3s ease;
+            }
+        }
+    }
     .container{
         .side_bar_place{
             display: none;
@@ -330,7 +351,6 @@ p{
     }
 }
 
-
 @media screen and (max-width: 400px){
     *{
         user-select: none;
@@ -348,4 +368,11 @@ p{
             }
         }
     }
+}
+
+@keyframes menu {
+    from{
+        width: 0;
+    }
+
 }
