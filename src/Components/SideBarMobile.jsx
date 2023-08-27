@@ -1,33 +1,35 @@
-import React, { useEffect } from 'react'
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import { useState } from 'react';
-import SideBar from './SideBar';
+import React, { useEffect } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { useState } from "react";
+import SideBar from "./SideBar";
 // Code of Responsive Navigation for Small Devices
 
 const SideBarMobile = () => {
-    const [menuState, setMenuState] = useState(false);
+  const [menuState, setMenuState] = useState(false);
 
-    const handleMenuClick =()=>{
-        setMenuState(!menuState);
-    }
+  const handleMenuClick = () => {
+    setMenuState(!menuState);
+  };
 
-    useEffect(()=>{
-        window.onscroll =()=>{
-            setMenuState(false);
-        }
-    },[])
-    
+  useEffect(() => {
+    window.onscroll = () => {
+      setMenuState(false);
+    };
+  }, []);
+
   return (
     <div className="sidebar_mobile_container">
-        <style>{`
+      <style>{`
 
             .locksidebar{
+                z-index:5;
                 position:absolute;
             }
             .locksidebar .sidebar_container{
                 display:block;
                 right:0;
+                position:fixed;
                 background-color:white;
                 z-index:1;
                 animation-name:menu;
@@ -38,17 +40,21 @@ const SideBarMobile = () => {
             }
 
         `}</style>
-            <div className="locksidebar">
-            {menuState ? <SideBar/> : null}
-            </div>
+        <div className="locksidebar">
+            {menuState ? <SideBar /> : null}
+        </div>
         <div className="name_container">
-            <h2>Anil Wagle</h2>
+          <h2>Anil Wagle</h2>
         </div>
         <div className="open_off_container" onClick={handleMenuClick}>
-            {menuState ? <CloseIcon className='menuicon'/> : <MenuIcon className='menuicon'/>}
+          {menuState ? (
+            <CloseIcon className="menuicon" />
+          ) : (
+            <MenuIcon className="menuicon" />
+          )}
         </div>
-    </div>
-  )
-}
+      </div>
+  );
+};
 
-export default SideBarMobile
+export default SideBarMobile;

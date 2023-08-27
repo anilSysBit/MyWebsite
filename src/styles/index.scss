@@ -46,6 +46,12 @@ p{
         // border: 2px solid rgb(255, 9, 9);
         height: 100%;
         width: calc(100% - 300px);
+        .sidebar_mobile_container{
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: white;
+        }
     }
 }
 
@@ -184,7 +190,6 @@ p{
 
 
 //Homepage Container---------------------------------------------------------------
-
 .homepage_container{
     height: 100vh;
     background-color: var(--homepage);

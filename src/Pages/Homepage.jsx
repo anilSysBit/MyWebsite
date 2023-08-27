@@ -1,8 +1,10 @@
 import React from 'react'
+import SideBarMobile from '../Components/SideBarMobile'
 
 const Homepage = () => {
   return (
-    <div className="homepage_container">
+    <div className="home_main_container">
+          <div className="homepage_container">
       <div className="internal_space">
       <div className="image_container">
           <img src="https://cdni.iconscout.com/illustration/premium/thumb/developer-2143200-1801815.png" alt="profile-image" />
@@ -22,6 +24,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

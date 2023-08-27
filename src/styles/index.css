@@ -42,6 +42,12 @@ p {
   height: 100%;
   width: calc(100% - 300px);
 }
+.container .pages_place .sidebar_mobile_container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
 
 .sidebar_container {
   position: fixed;
