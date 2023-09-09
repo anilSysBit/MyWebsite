@@ -6,19 +6,20 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   max-width: 1960px;
   max-height: 1080px;
   margin: auto;
 }
 
 :root {
-  --blue_color:#9e9ff4;
-  --text:#8482a7;
+  --blue_color: #9e9ff4;
+  --text: #8482a7;
   --karla: "Karla", sans-serif;
   --inter: "inter", sans-serif;
-  --homepage:#e3fbf4;
-  --dark_blue:#1c1760;
+  --homepage: #e3fbf4;
+  --dark_blue: #1c1760;
 }
 
 p {
@@ -149,10 +150,9 @@ h3 {
 
 .global_button_fill {
   height: 50px;
-  width: 180px;
-  border-radius: 5px;
+  width: 190px;
+  border-radius: 4px;
   transition: 0.3s ease;
-  margin: 10px;
   font-size: 16px;
   cursor: pointer;
   background-color: #130f49;
@@ -166,15 +166,15 @@ h3 {
 
 .global_button_nofill {
   height: 50px;
-  width: 180px;
-  border-radius: 5px;
+  width: 190px;
+  border-radius: 4px;
   transition: 0.3s ease;
-  margin: 10px;
   font-size: 16px;
   cursor: pointer;
   border: 2px solid #130f49;
   color: #130f49;
   background-color: transparent;
+  margin-left: 10px;
 }
 .global_button_nofill:hover {
   background-color: #130f49;
@@ -242,6 +242,105 @@ h3 {
 .homepage_container .internal_space .data_container .location_details p:hover {
   color: orange;
   cursor: pointer;
+}
+
+.about_page_container {
+  height: auto;
+}
+.about_page_container .size_manager {
+  padding: 130px;
+  height: auto;
+}
+.about_page_container .size_manager .about_aw_biography {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.about_page_container .size_manager .about_aw_biography .left {
+  width: 40%;
+  line-height: 1.5;
+}
+.about_page_container .size_manager .about_aw_biography .left h2 {
+  color: var(--dark_blue);
+  font-size: 30px;
+}
+.about_page_container .size_manager .about_aw_biography .left .global_button_fill {
+  margin-top: 15px;
+}
+.about_page_container .size_manager .about_aw_biography .right {
+  float: right;
+  width: 60%;
+}
+.about_page_container .size_manager .about_aw_biography .right p {
+  font-size: 18px;
+}
+.about_page_container .size_manager .about_aw_biography .right p span {
+  color: orange;
+}
+.about_page_container .size_manager .about_aw_biography .right ul li {
+  list-style: none;
+  margin-right: 0px 40px 20px 0;
+  display: inline-block;
+}
+.about_page_container .size_manager .about_aw_biography .right ul li span {
+  display: block;
+  margin-right: 20px;
+  line-height: 1.5;
+}
+.about_page_container .size_manager .about_aw_biography .right ul li span:first-child {
+  text-transform: uppercase;
+  font-family: var(--inter);
+  text-decoration: underline;
+  color: var(--text);
+}
+.about_page_container .size_manager .about_aw_biography .right ul li span:last-child {
+  font-family: var(--karla);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--dark_blue);
+}
+.about_page_container .size_manager .about_aw_biography .right ul li span:last-child:hover {
+  color: orange;
+  cursor: pointer;
+}
+.about_page_container .size_manager .anil_aw_counter {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.about_page_container .size_manager .anil_aw_counter ul {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.about_page_container .size_manager .anil_aw_counter ul li {
+  list-style: none;
+  height: 90%;
+  width: 32%;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.about_page_container .size_manager .anil_aw_counter ul li h1 {
+  color: var(--dark_blue);
+  font-family: var(--inter);
+  font-size: 40px;
+}
+.about_page_container .size_manager .anil_aw_counter ul li p {
+  text-transform: uppercase;
+}
+.about_page_container .size_manager .anil_aw_counter ul li:first-child {
+  background-color: #d3f4ec;
+}
+.about_page_container .size_manager .anil_aw_counter ul li:nth-child(2) {
+  background-color: #fce8d4;
+}
+.about_page_container .size_manager .anil_aw_counter ul li:last-child {
+  background-color: #e3f9e0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -316,6 +415,34 @@ h3 {
     width: 100%;
     height: auto;
     padding: 20px;
+  }
+  .about_page_container .size_manager {
+    padding: 50px;
+    height: 100%;
+  }
+  .about_page_container .size_manager .about_aw_biography {
+    height: auto;
+    display: block;
+    border: 2px solid black;
+    float: left;
+  }
+  .about_page_container .size_manager .about_aw_biography .left {
+    width: 100%;
+  }
+  .about_page_container .size_manager .about_aw_biography .right {
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .about_page_container .size_manager .anil_aw_counter {
+    float: left;
+  }
+  .about_page_container .size_manager .anil_aw_counter ul {
+    display: block;
+  }
+  .about_page_container .size_manager .anil_aw_counter ul li {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 400px) {
