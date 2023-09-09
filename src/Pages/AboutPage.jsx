@@ -6,7 +6,7 @@ const AboutPage = () => {
         <div className="size_manager">
             <div className="intro_container">
             <p>-NICE TO MEET YOU!</p>
-            <h2>Robert Elisc</h2>
+            <h2>Anil Wagle</h2>
             <h3>Full stack Web Developer</h3>
             <button className='global_button_fill'>Got a Project?</button>
             </div>
