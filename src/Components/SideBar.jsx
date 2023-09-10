@@ -3,6 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import myimage from '../assets/myppimage.jpg'
 // Side Bar That contains the Navigation and  Social Media Tags and Copyright Details
 // Resopnsive side bar opens after its gets its size
 // Responsive side bar opens from right-left
@@ -32,7 +33,7 @@ const SideBar = () => {
 
             <div className="thumbnail_box">
                 <div className="img_box">
-                    <img src="https://scontent.fktm16-1.fna.fbcdn.net/v/t39.30808-6/350473407_1192554214752764_1506484405097880996_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=XF6D9BuPF_IAX9TdEXZ&_nc_oc=AQl0ooTkPOFQJZTuBEH06UsGHefcCUDsMNPm3PVUg5XtXAseA5eM2J7niMv0PhUdQf8&_nc_ht=scontent.fktm16-1.fna&oh=00_AfD3j94ZB-ED0ODKFlK2xDE-d8OLgDnBvvZEAa_v2cmFFw&oe=64EDE32E" alt="thumbnail_sidebar" />
+                    <img src={myimage} alt="thumbnail_sidebar" />
                 </div>
                 <div className="name_box">
                     <h2>Anil Wagle</h2>

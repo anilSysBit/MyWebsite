@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body,
@@ -266,7 +267,7 @@ h3 {
 .about_page_container {
   height: auto;
   .size_manager {
-    padding: 130px;
+    padding: 85px;
     height: auto;
     .about_aw_biography {
       width: 100%;
@@ -309,10 +310,11 @@ h3 {
                 color: var(--text);
               }
               &:last-child {
-                font-family: var(--karla);
+                font-family: var(--inter);
                 font-weight: 700;
-                font-size: 18px;
+                font-size: 16px;
                 color: var(--dark_blue);
+                opacity: .8;
                 &:hover {
                   color: orange;
                   cursor: pointer;
@@ -330,9 +332,10 @@ h3 {
       margin-bottom: 50px;
       ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 100%;
         li {
+          position: relative;
           list-style: none;
           height: 90%;
           width: 32%;
@@ -342,8 +345,29 @@ h3 {
           flex-direction: column;
           border-radius: 4px;
           position: relative;
+          overflow: hidden;
           cursor: pointer;
 
+          &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background-color:rgba($color: white, $alpha: .5);
+            transform: rotate3d(0,0,1,45deg) translate3d(0,-200%,0) scale(1.4);
+            transition:transform .6s ease-in-out;
+            z-index: 3;
+          }
+          &:hover::before{
+            z-index: 1;
+            transform: rotate3d(0,0,1,25deg) translate3d(0,200%,0);
+
+
+          }
           h1 {
             color: var(--dark_blue);
             font-family: var(--inter);
@@ -462,12 +486,10 @@ h3 {
   .about_page_container{
     .size_manager{
         padding: 50px;
-        // border: 2px solid green;
         height: 100%;
         .about_aw_biography{
            height: auto;
            display: block;
-           border: 2px solid black;
            float: left;
            .left{
             width: 100%;

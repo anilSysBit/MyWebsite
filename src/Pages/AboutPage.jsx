@@ -43,7 +43,7 @@ const AboutPage = () => {
         <div className="anil_aw_counter">
           <ul>
             <li>
-              <h1>1+</h1>
+              <h1>2+</h1>
               <p>years of experience</p>
             </li>
             <li>
@@ -56,7 +56,9 @@ const AboutPage = () => {
             </li>
           </ul>
         </div>
-        <div className="personal_project_listing"></div>
+        <div className="anil_aw_experience">
+          
+        </div>
       </div>
     </div>
   );
