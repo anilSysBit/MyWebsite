@@ -358,8 +358,8 @@ h3 {
             height: 100%;
             width: 100%;
             background-color:rgba($color: white, $alpha: .5);
-            transform: rotate3d(0,0,1,45deg) translate3d(0,-200%,0) scale(1.4);
-            transition:transform .6s ease-in-out;
+            transform: rotate3d(0,0,1,45deg) translate3d(0,-220%,0) scale(1.4);
+            transition: transform .6s;
             z-index: 3;
           }
           &:hover::before{
@@ -406,6 +406,11 @@ h3 {
       }
     }
   }
+  .about_page_container{
+    .size_manager{
+      padding: 80px 0px 0px 0px;
+    }
+  }
 }
 
 @media screen and (max-width: 870px) {
@@ -426,7 +431,12 @@ h3 {
       }
     }
   }
-  .homepage_container {
+  .about_page_container{
+    .size_manager{
+      padding: 50px 0px 0px 0px;
+      .about_aw_biography{}
+      .anil_aw_counter{}
+    }
   }
 }
 .sidebar_mobile_container {
