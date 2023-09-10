@@ -198,16 +198,17 @@ h3 {
   padding: 10px;
 }
 .homepage_container .internal_space .image_container {
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
+  max-height: 500px;
   display: flex;
   place-content: center;
   place-items: center;
 }
 .homepage_container .internal_space .image_container img {
-  height: 430px;
-  width: 380px;
-  transform: scaleX(-1);
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
 }
 .homepage_container .internal_space .data_container {
   height: 100%;

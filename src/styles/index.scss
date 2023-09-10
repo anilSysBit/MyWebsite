@@ -208,15 +208,18 @@ h3 {
     padding: 10px;
     .image_container {
       // border: 2px solid black;
-      height: 50%;
-      width: 50%;
+      height: 100%;
+      width: 100%;
+      max-height: 500px;
       display: flex;
       place-content: center;
       place-items: center;
+      // border: 2px solid black;
       img {
-        height: 430px;
-        width: 380px;
-        transform: scaleX(-1);
+        height: 100%;
+        width: 100%;
+        max-width: 500px;
+        // transform: scaleX(-1);
         // filter: contrast(-10%);
       }
     }

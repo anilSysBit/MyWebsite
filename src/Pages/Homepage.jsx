@@ -7,7 +7,7 @@ const Homepage = () => {
           <div className="homepage_container">
       <div className="internal_space">
       <div className="image_container">
-          <img src="https://cdni.iconscout.com/illustration/premium/thumb/developer-2143200-1801815.png" alt="profile-image" />
+          <img src="https://codemen.org/assets/images/WebDesignDevelopmentVector.png" alt="profile-image" />
         </div>
         <div className="data_container">
           <h1>Hi, I'm <span>Anil!</span><br/> Fullstack Web Developer <br/>from Nepal</h1>
