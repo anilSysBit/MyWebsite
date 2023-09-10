@@ -156,6 +156,7 @@ h3 {
   transition: 0.3s ease;
   font-size: 16px;
   cursor: pointer;
+  margin: 10px 10px 0px 0px;
   background-color: #130f49;
   color: white;
 }
@@ -172,10 +173,10 @@ h3 {
   transition: 0.3s ease;
   font-size: 16px;
   cursor: pointer;
+  margin: 10px 10px 0px 0px;
   border: 2px solid #130f49;
   color: #130f49;
   background-color: transparent;
-  margin-left: 10px;
 }
 .global_button_nofill:hover {
   background-color: #130f49;
@@ -250,7 +251,6 @@ h3 {
 }
 .about_page_container .size_manager {
   padding: 85px;
-  height: auto;
 }
 .about_page_container .size_manager .about_aw_biography {
   width: 100%;
@@ -307,7 +307,6 @@ h3 {
 }
 .about_page_container .size_manager .anil_aw_counter {
   width: 100%;
-  height: 200px;
   margin-bottom: 50px;
 }
 .about_page_container .size_manager .anil_aw_counter ul {
@@ -318,7 +317,7 @@ h3 {
 .about_page_container .size_manager .anil_aw_counter ul li {
   position: relative;
   list-style: none;
-  height: 90%;
+  height: 200px;
   width: 32%;
   display: flex;
   place-content: center;
@@ -337,7 +336,7 @@ h3 {
   left: 0;
   bottom: 0;
   height: 100%;
-  width: 100%;
+  width: 150%;
   background-color: rgba(255, 255, 255, 0.5);
   transform: rotate3d(0, 0, 1, 45deg) translate3d(0, -220%, 0) scale(1.4);
   transition: transform 0.6s;
@@ -364,8 +363,69 @@ h3 {
 .about_page_container .size_manager .anil_aw_counter ul li:last-child {
   background-color: #e3f9e0;
 }
+.about_page_container .anil_aw_experience {
+  width: 100%;
+  float: left;
+  background-color: #f3f9ff;
+}
+.about_page_container .anil_aw_experience .header h1 {
+  font-size: 30px;
+  font-family: var(--karla);
+  color: var(--dark_blue);
+  opacity: 0.8;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing {
+  padding-top: 50px;
+  width: 100%;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul li {
+  cursor: pointer;
+  transition: 0.6s ease;
+  list-style: none;
+  width: 50%;
+  padding: 0px 30px 40px 0px;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul li div {
+  height: 240px;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgb(212, 212, 212);
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul li div .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul li div .title span:first-child {
+  color: rgb(244, 161, 6);
+  font-family: var(--karla);
+  font-weight: 600;
+  font-size: 16px;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul li div h3 {
+  font-family: var(--inter);
+  font-weight: 700;
+  color: var(--dark_blue);
+  padding-bottom: 10px;
+  font-size: 19px;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul li div .description {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul li:hover {
+  transform: translateY(-5px);
+}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .homepage_container .internal_space .image_container img {
     height: 300px;
     width: 300px;
@@ -471,6 +531,19 @@ h3 {
     width: 100%;
     margin-top: 10px;
   }
+  .about_page_container .size_manager .anil_aw_counter ul li::before {
+    display: none;
+  }
+  .about_page_container .anil_aw_experience .aw_experience_listing ul {
+    display: block;
+  }
+  .about_page_container .anil_aw_experience .aw_experience_listing ul li {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+  }
+  .about_page_container .anil_aw_experience .aw_experience_listing ul li div {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 400px) {
   * {
@@ -486,6 +559,9 @@ h3 {
   }
   .homepage_container .internal_space .data_container h1 {
     font-size: 30px;
+  }
+  .about_page_container .size_manager {
+    padding: 50px 10px 0px 10px;
   }
 }
 @keyframes menu {
