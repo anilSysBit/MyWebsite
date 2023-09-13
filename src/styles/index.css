@@ -44,6 +44,7 @@ h3 {
 
 .container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -261,6 +262,7 @@ h3 {
 .about_page_container .size_manager .about_aw_biography .left {
   width: 40%;
   line-height: 1.5;
+  padding: 10px;
 }
 .about_page_container .size_manager .about_aw_biography .left h2 {
   color: var(--dark_blue);
@@ -296,11 +298,11 @@ h3 {
   color: var(--text);
 }
 .about_page_container .size_manager .about_aw_biography .right ul li span:last-child {
-  font-family: var(--inter);
+  font-family: var(--karla);
   font-weight: 700;
   font-size: 16px;
   color: var(--dark_blue);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .about_page_container .size_manager .about_aw_biography .right ul li span:last-child:hover {
   color: orange;
@@ -391,39 +393,140 @@ h3 {
   width: 50%;
   padding: 0px 30px 40px 0px;
 }
-.about_page_container .anil_aw_experience .aw_experience_listing ul li div {
+.about_page_container .anil_aw_experience .aw_experience_listing ul li .list {
   height: 240px;
   width: 100%;
   box-shadow: 0px 0px 10px rgb(212, 212, 212);
   padding: 20px;
   border-radius: 4px;
   background-color: #ffffff;
+  position: relative;
 }
-.about_page_container .anil_aw_experience .aw_experience_listing ul li div .title {
+.about_page_container .anil_aw_experience .aw_experience_listing ul li .list .arrow {
+  color: var(--text);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul li .title {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+  margin-top: 20px;
 }
-.about_page_container .anil_aw_experience .aw_experience_listing ul li div .title span:first-child {
+.about_page_container .anil_aw_experience .aw_experience_listing ul li .title span:first-child {
   color: rgb(244, 161, 6);
   font-family: var(--karla);
   font-weight: 600;
   font-size: 16px;
 }
-.about_page_container .anil_aw_experience .aw_experience_listing ul li div h3 {
+.about_page_container .anil_aw_experience .aw_experience_listing ul li h3 {
   font-family: var(--inter);
   font-weight: 700;
   color: var(--dark_blue);
   padding-bottom: 10px;
   font-size: 19px;
 }
-.about_page_container .anil_aw_experience .aw_experience_listing ul li div .description {
+.about_page_container .anil_aw_experience .aw_experience_listing ul li .description {
   line-height: 1.5;
   margin-top: 10px;
 }
 .about_page_container .anil_aw_experience .aw_experience_listing ul li:hover {
   transform: translateY(-5px);
+}
+.about_page_container .anil_aw_experience .aw_experience_listing ul li:hover .arrow {
+  color: orange;
+}
+
+.experience_detail_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  z-index: 20;
+}
+.experience_detail_container .detail_container {
+  height: 90%;
+  width: 90vh;
+  background-color: rgb(243, 243, 243);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+  outline: 2px solid white;
+}
+.experience_detail_container .detail_container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+}
+.experience_detail_container .detail_container .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.experience_detail_container .detail_container .title span:first-child {
+  color: rgb(244, 161, 6);
+  font-family: var(--karla);
+  font-weight: 600;
+  font-size: 16px;
+  background-color: rgb(35, 34, 34);
+  padding: 10px;
+  border-radius: 4px;
+}
+.experience_detail_container .detail_container h3 {
+  font-family: var(--inter);
+  font-weight: 700;
+  color: var(--dark_blue);
+  padding-bottom: 10px;
+  font-size: 19px;
+}
+.experience_detail_container .detail_container .description {
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.experience_detail_container .detail_container .closebutton {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  border: 2px solid white;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  padding: 10px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.experience_detail_container .detail_container .closebutton:hover {
+  background-color: white;
+  border-radius: 4px;
+  color: black;
+  border: 1px solid black;
+}
+.experience_detail_container::before {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute; /* Position it absolutely within the parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Set the overlay background color with reduced opacity */
+  z-index: -1;
 }
 
 @media screen and (max-width: 1200px) {
@@ -563,6 +666,9 @@ h3 {
   }
   .about_page_container .size_manager {
     padding: 50px 10px 0px 10px;
+  }
+  .experience_detail_container .size_manager {
+    width: 100%;
   }
 }
 @keyframes menu {

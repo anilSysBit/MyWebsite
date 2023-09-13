@@ -39,8 +39,13 @@ h3 {
 .active {
   color: var(--blue_color);
 }
+
+
+
+
 .container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   // overflow: hidden;
@@ -60,6 +65,11 @@ h3 {
     }
   }
 }
+
+
+
+
+
 
 // Sidebar----------------------------------------------------------
 
@@ -193,6 +203,10 @@ h3 {
   }
 }
 
+
+
+
+
 //Homepage Container---------------------------------------------------------------
 .homepage_container {
   height: 100vh;
@@ -265,6 +279,10 @@ h3 {
 
 //----------------------------------------------------------------------------------
 
+
+
+
+
 // About Page container
 
 .about_page_container {
@@ -279,6 +297,7 @@ h3 {
       .left {
         width: 40%;
         line-height: 1.5;
+        padding: 10px;
         h2 {
           color: var(--dark_blue);
           font-size: 30px;
@@ -313,11 +332,11 @@ h3 {
                 color: var(--text);
               }
               &:last-child {
-                font-family: var(--inter);
+                font-family: var(--karla);
                 font-weight: 700;
                 font-size: 16px;
                 color: var(--dark_blue);
-                opacity: .8;
+                opacity: .9;
                 &:hover {
                   color: orange;
                   cursor: pointer;
@@ -419,47 +438,173 @@ h3 {
           list-style: none;
           width: 50%;
           padding: 0px 30px 40px 0px;
-          div{
+          .list{
             height: 240px;
             width: 100%;
             box-shadow: 0px 0px 10px rgb(212, 212, 212);
             padding: 20px;
             border-radius: 4px;
             background-color: #ffffff;
-            .title{
-              width: 100%;
-              display: flex;
-              justify-content: space-between;
-              padding-bottom: 20px;
-              span{
-                &:first-child{
-                  color: rgb(244, 161, 6);
-                  font-family: var(--karla);
-                  font-weight:600;
-                  font-size: 16px;
-                }
+            position: relative;
+            .arrow{
+              color: var(--text);
+              position: absolute;
+              right: 10px;
+              bottom: 10px;
+            }
+          }
+          .title{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            span{
+              &:first-child{
+                color: rgb(244, 161, 6);
+                font-family: var(--karla);
+                font-weight:600;
+                font-size: 16px;
               }
             }
-            h3{
-              font-family: var(--inter);
-              font-weight: 700;
-              color: var(--dark_blue);
-              padding-bottom: 10px;
-              font-size: 19px;
-            }
-            .description{
-              line-height: 1.5;
-              margin-top: 10px;
-            }
+          }
+          h3{
+            font-family: var(--inter);
+            font-weight: 700;
+            color: var(--dark_blue);
+            padding-bottom: 10px;
+            font-size: 19px;
+          }
+          .description{
+            line-height: 1.5;
+            margin-top: 10px;
           }
           &:hover{
             transform: translateY(-5px);
           }
-        }
+          &:hover .arrow{
+            color: orange;
+          }
       }
     }
   }
+  }
 }
+
+
+
+
+
+
+// Preview Css Model
+
+.experience_detail_container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  // background-color: black;
+  // opacity: .5;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  z-index: 20;
+    .detail_container{
+      height: 90%;
+      width: 90vh;
+      background-color: rgb(243, 243, 243);
+      overflow-x:hidden;
+      overflow-y: scroll;
+      padding: 20px;
+      // border: 2px solid black;
+      position: relative;
+      border-radius: 4px;
+      outline: 2px solid white;
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 99%;
+        // max-height: 300px;
+        // max-width: 500px;
+      }
+      .title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        span{
+          &:first-child{
+            color: rgb(244, 161, 6);
+            font-family: var(--karla);
+            font-weight:600;
+            font-size: 16px;
+            background-color: rgb(35, 34, 34);
+            padding: 10px;
+            border-radius: 4px;
+          }
+        }
+      }
+      h3{
+        font-family: var(--inter);
+        font-weight: 700;
+        color: var(--dark_blue);
+        padding-bottom: 10px;
+        font-size: 19px;
+      }
+      .description{
+        line-height: 1.5;
+        margin-top: 10px;
+      }
+      .closebutton{
+        font-size: 20px;
+        // background-color: black;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        border: 2px solid white;
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+        padding: 10px;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        transition: .3s;
+  
+        &:hover{
+          background-color: white;
+          border-radius: 4px;
+          color: black;
+          border: 1px solid black;
+        }
+      }
+  }
+  &::before{
+    content: ''; /* Create an empty pseudo-element */
+    position: absolute; /* Position it absolutely within the parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Set the overlay background color with reduced opacity */
+    z-index: -1;
+  }
+}
+
+// ----------------------------------------------------
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px) {
   .homepage_container {
     .internal_space {
@@ -482,6 +627,9 @@ h3 {
     }
   }
 }
+
+
+
 
 @media screen and (max-width: 870px) {
   .container {
@@ -507,6 +655,9 @@ h3 {
     }
   }
 }
+
+
+
 .sidebar_mobile_container {
   display: none;
 }
@@ -609,6 +760,10 @@ h3 {
   }
 }
 
+
+
+
+
 @media screen and (max-width: 400px) {
   * {
     user-select: none;
@@ -631,7 +786,15 @@ h3 {
       padding: 50px 10px 0px 10px;
     }
   }
+  .experience_detail_container{
+    .size_manager{
+      width: 100%;
+    }
+  }
 }
+
+
+
 
 @keyframes menu {
   from {
