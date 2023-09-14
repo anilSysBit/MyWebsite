@@ -10,8 +10,8 @@ const ContactUs = () => {
                 <p className='contact_desc'>I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want to run past me. You can contact anytime at 24/7</p>
 
                 <ul className="detail">
-                    <li>+977 9816284342</li>
-                    <li>anil.wagle808@gmail.com</li>
+                    <li onClick={()=>window.location.href='tel:+9779816284342'}>+977 9816284342</li>
+                    <li onClick={()=>window.location.href = 'mailto:anil.wagle808@gmail.com'}>anil.wagle808@gmail.com</li>
                     <li>Khairahani-1,Chitwan,Nepal</li>
                 </ul>
             </div>

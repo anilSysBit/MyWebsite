@@ -19,8 +19,8 @@ const Homepage = () => {
           </div>
 
           <div className="location_details">
-            <p>+977 9816284342</p>
-            <p>anil.wagle808@gmail.com</p>
+            <a href="#tel:+9779816284342"><p>+977 9816284342</p></a>
+            <a href="mailto:anil.wagle808@gmail.com"><p>anil.wagle808@gmail.com</p></a>
             <p>Khairahani-1, Chitwan</p>
           </div>
         </div>

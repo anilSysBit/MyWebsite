@@ -47,7 +47,7 @@ const Services = () => {
         <div className="header">
             <p>-SERVICES</p>
             <h1>My Services</h1>
-            <span>anil.wagle808@gmail.com</span>
+            <span onClick={()=>window.location.href = 'mailto:anil.wagle808@gmail.com'}>anil.wagle808@gmail.com</span>
         </div>
         <div className="aw_experience_listing services_listing">
             <ul>

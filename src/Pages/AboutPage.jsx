@@ -35,7 +35,7 @@ const AboutPage = () => {
               </li>
               <li>
                 <span>MAIL</span>
-                <span>anil.wagle808@gmail.com</span>
+                <span onClick={()=>window.location.href ='mailto:anil.wagle808@gmail.com'}>anil.wagle808@gmail.com</span>
               </li>
             </ul>
           </div>
