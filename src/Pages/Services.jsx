@@ -43,7 +43,7 @@ const Services = () => {
     };
   return (
     <div className="services_aw_container">
-        <div className="size_manager">
+        <div className="size_manager" id='services'>
         <div className="header">
             <p>-SERVICES</p>
             <h1>My Services</h1>

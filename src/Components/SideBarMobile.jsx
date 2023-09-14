@@ -44,7 +44,7 @@ const SideBarMobile = () => {
             {menuState ? <SideBar /> : null}
         </div>
         <div className="name_container">
-          <h2>Anil Wagle</h2>
+          <a href="#home"><h2>Anil Wagle</h2></a>
         </div>
         <div className="open_off_container" onClick={handleMenuClick}>
           {menuState ? (

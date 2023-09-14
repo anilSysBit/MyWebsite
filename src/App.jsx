@@ -5,6 +5,7 @@ import SideBar from './Components/SideBar'
 import SideBarMobile from './Components/SideBarMobile';
 import AboutPage from './Pages/AboutPage';
 import Services from './Pages/Services';
+import ContactUs from './Pages/ContactUs';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Homepage/>
         <AboutPage/>
         <Services/>
+        <ContactUs/>
         </div>
       </div>
     </>

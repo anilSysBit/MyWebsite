@@ -14,6 +14,11 @@ html {
   margin: auto;
 }
 
+.abouttag {
+  position: absolute;
+  bottom: 100px;
+}
+
 :root {
   --blue_color: #9e9ff4;
   --text: #8482a7;
@@ -21,6 +26,10 @@ html {
   --inter: "inter", sans-serif;
   --homepage: #e3fbf4;
   --dark_blue: #1c1760;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -541,7 +550,7 @@ h3 {
 .services_aw_container .size_manager {
   height: 100%;
   width: 100%;
-  padding: 85px;
+  padding: 70px;
 }
 .services_aw_container .size_manager .header h1 {
   font-size: 35px;
@@ -566,7 +575,7 @@ h3 {
 .services_listing ul li .list {
   border: 0.5px solid rgb(156, 156, 156);
   box-shadow: none;
-  height: 300px;
+  height: 280px;
 }
 .services_listing ul li .list .arrow {
   font-size: 18px;
@@ -582,6 +591,86 @@ h3 {
   margin-top: 20px;
 }
 
+.contact_aw_container {
+  background-color: #e9f9ff;
+  float: left;
+  height: auto;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.contact_aw_container .size_manager {
+  padding: 80px;
+  line-height: 1.5;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.contact_aw_container .size_manager .header {
+  padding-bottom: 20px;
+  flex: 1;
+}
+.contact_aw_container .size_manager .header h1 {
+  font-size: 35px;
+  font-family: var(--karla);
+  padding-bottom: 20px;
+}
+.contact_aw_container .size_manager .header .contact_desc {
+  padding-bottom: 20px;
+}
+.contact_aw_container .size_manager .header .detail {
+  line-height: 2;
+  float: left;
+}
+.contact_aw_container .size_manager .header .detail li {
+  list-style-type: none;
+  font-family: var(--karla);
+  text-decoration: underline;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.contact_aw_container .size_manager .header .detail li:hover {
+  color: orange;
+}
+.contact_aw_container .size_manager form {
+  flex: 1;
+  padding: 10px;
+  float: left;
+}
+.contact_aw_container .size_manager form .form_control {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px rgb(254, 255, 235);
+}
+.contact_aw_container .size_manager form .form_control input, .contact_aw_container .size_manager form .form_control textarea {
+  height: 100%;
+  width: 100%;
+  font-family: var(--karla);
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+}
+.contact_aw_container .size_manager form .form_control textarea {
+  height: 120px;
+}
+.contact_aw_container .size_manager form button {
+  margin-top: 50px;
+}
+.contact_aw_container .contact_gmap_container {
+  padding: 30px;
+  width: 100%;
+  height: 350px;
+  float: left;
+}
+.contact_aw_container .contact_gmap_container iframe {
+  width: 100%;
+  border: none;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgb(173, 173, 173);
+}
+
 @media screen and (max-width: 1200px) {
   .homepage_container .internal_space .image_container img {
     height: 300px;
@@ -595,6 +684,9 @@ h3 {
   }
   .services_listing ul li {
     width: 50%;
+  }
+  .anil_aw_experience .size_manager {
+    padding: 50px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -616,6 +708,12 @@ h3 {
   }
   .services_aw_container .size_manager {
     padding: 30px;
+  }
+  .anil_aw_experience .size_manager {
+    padding: 30px;
+  }
+  .anil_aw_experience .size_manager .aw_experience_listing ul li .title {
+    margin-top: 2px;
   }
 }
 .sidebar_mobile_container {
@@ -707,6 +805,9 @@ h3 {
   .about_page_container .anil_aw_experience .aw_experience_listing ul li div {
     width: 100%;
   }
+  .anil_aw_experience .size_manager {
+    padding: 20px;
+  }
   .services_aw_container .size_manager {
     padding: 10px;
   }
@@ -721,6 +822,13 @@ h3 {
   .services_listing ul li .list {
     width: 100%;
     height: 200px;
+  }
+  .contact_aw_container .size_manager {
+    display: block;
+    padding: 40px;
+  }
+  .contact_aw_container .size_manager form {
+    width: 100%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -740,6 +848,13 @@ h3 {
   }
   .about_page_container .size_manager {
     padding: 50px 10px 0px 10px;
+  }
+  .contact_aw_container .size_manager {
+    border: 2px solid white;
+    padding: 15px;
+  }
+  .contact_aw_container .size_manager form {
+    padding: 2px;
   }
 }
 @keyframes menu {

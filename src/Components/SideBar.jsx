@@ -42,19 +42,19 @@ const SideBar = () => {
 
             <div className="navigation_container">
                 <ul>
-                    <li><a href="#" className='active'>Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" className='active'>Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
             <div className="copyright_container">
                 <div className="social_media_handle">
-                    <a href="#"><FacebookIcon/></a>
-                    <a href="#"><GitHubIcon/></a>
-                    <a href="#"><TwitterIcon/></a>
-                    <a href="#"><LinkedInIcon/></a>
+                    <a target='_blank' href="https://www.facebook.com/profile.php?id=100005517855446"><FacebookIcon/></a>
+                    <a target='_blank' href="https://github.com/anilSysBit"><GitHubIcon/></a>
+                    <a target='_blank' href="https://twitter.com/anil_code_808"><TwitterIcon/></a>
+                    <a target='_blank' href="https://www.linkedin.com/in/anil-wagle-a09609224/"><LinkedInIcon/></a>
                 </div>
                 <p>Copyright©2023.Anil Wagle.<br/>All rights Reserved</p>
             </div>

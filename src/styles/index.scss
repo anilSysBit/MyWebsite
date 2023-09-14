@@ -13,6 +13,10 @@ html {
   max-height: 1080px;
   margin: auto;
 }
+.abouttag{
+  position: absolute;
+  bottom: 100px;
+}
 
 :root {
   --blue_color: #9e9ff4;
@@ -23,6 +27,9 @@ html {
   --dark_blue: #1c1760;
 }
 
+a{
+  text-decoration: none;
+}
 p {
   font-family: var(--karla);
   font-size: 16px;
@@ -593,7 +600,7 @@ h3 {
   .size_manager{
     height: 100%;
     width: 100%;
-    padding: 85px;
+    padding: 70px;
     .header{
       h1{
         font-size: 35px;
@@ -622,7 +629,7 @@ h3 {
       .list{
         border: .5px solid rgb(156, 156, 156);
         box-shadow: none;
-        height: 300px;
+        height: 280px;
         .arrow{
           font-size: 18px;
           left: 20px;
@@ -642,7 +649,97 @@ h3 {
     }
   }
 }
-// -------------------------
+// ---------------------------------------------
+
+.contact_aw_container{
+  background-color: #e9f9ff;
+  float: left;
+  height: auto;
+  width: 100%;
+  padding-bottom: 100px;
+  .size_manager{
+    padding: 80px;
+    // border: 2px solid black;
+    line-height: 1.5;
+    display: flex;
+    column-gap: 20px;
+    .header{
+      padding-bottom: 20px;
+      flex: 1;
+      h1{
+        font-size: 35px;
+        font-family: var(--karla);
+        padding-bottom: 20px;
+      }
+      .contact_desc{
+        padding-bottom: 20px;
+      }
+      .detail{
+        line-height: 2;
+        float: left;
+        li{
+          list-style-type: none;
+          font-family: var(--karla);
+          text-decoration: underline;
+          padding: 5px;
+          cursor: pointer;
+          font-weight: 600;
+
+          &:hover{
+            color: orange;
+          }
+        }
+      }
+    }
+    form{
+      flex: 1;
+      // border: 2px solid black;
+      padding: 10px;
+      // height: auto;
+      float: left;
+      .form_control{
+        width: 100%;
+        height: 60px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 5px rgb(254, 255, 235);
+        input,textarea{
+          height: 100%;
+          width: 100%;
+          font-family: var(--karla);
+          padding: 20px;
+          font-size: 18px;
+          border: none;
+
+        }
+        textarea{
+          height: 120px;
+        }
+      }
+      button{
+        margin-top: 50px;
+      }
+    }
+  }
+  .contact_gmap_container{
+    padding: 30px;
+    width: 100%;
+    height: 350px;
+    float: left;
+    iframe{
+      width: 100%;
+      border: none;
+      height: 100%;
+      border-radius: 4px;
+      box-shadow: 0px 0px 5px rgb(173, 173, 173);
+    }
+  }
+}
+
+
+// contact us 
+
+
+// -----------------------------------
 
 @media screen and (max-width: 1200px) {
   .homepage_container {
@@ -670,6 +767,11 @@ h3 {
       li{
         width: 50%;
       }
+    }
+  }
+  .anil_aw_experience{
+    .size_manager{
+      padding: 50px;
     }
   }
 }
@@ -700,6 +802,21 @@ h3 {
   .services_aw_container{
     .size_manager{
       padding: 30px;
+    }
+  }
+
+  .anil_aw_experience{
+    .size_manager{
+      padding: 30px;
+      .aw_experience_listing{
+        ul{
+          li{
+            .title{
+              margin-top: 2px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -804,6 +921,11 @@ h3 {
       }
     }
   }
+  .anil_aw_experience{
+    .size_manager{
+      padding: 20px;
+    }
+  }
   .services_aw_container{
     .size_manager{
       padding: 10px;
@@ -822,6 +944,15 @@ h3 {
           width: 100%;
           height: 200px;
         }
+      }
+    }
+  }
+  .contact_aw_container{
+    .size_manager{
+      display: block;
+      padding: 40px;
+      form{
+        width: 100%;
       }
     }
   }
@@ -847,6 +978,15 @@ h3 {
   .about_page_container {
     .size_manager {
       padding: 50px 10px 0px 10px;
+    }
+  }
+  .contact_aw_container{
+    .size_manager{
+      border: 2px solid white;
+      padding: 15px;
+      form{
+        padding: 2px;
+      }
     }
   }
 }

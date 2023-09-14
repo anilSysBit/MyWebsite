@@ -3,7 +3,8 @@ import SideBarMobile from '../Components/SideBarMobile'
 
 const Homepage = () => {
   return (
-    <div className="home_main_container">
+    <div className="home_main_container" id='home'>
+      <span className='abouttag' id='about'></span>
           <div className="homepage_container">
       <div className="internal_space">
       <div className="image_container">
@@ -13,8 +14,8 @@ const Homepage = () => {
           <h1>Hi, I'm <span>Anil!</span><br/> Fullstack Web Developer <br/>from Nepal</h1>
           <p>I am Nepal based Web Developer with Sufficient Trainings</p>
           <div className="button_container">
-            <button className='global_button_fill'>Got a Project?</button>
-            <button className='global_button_nofill'>Let's talk</button>
+            <a href="#contact"><button className='global_button_fill'>Got a Project?</button></a>
+            <a href="#contact"><button className='global_button_nofill'>Let's talk</button></a>
           </div>
 
           <div className="location_details">
