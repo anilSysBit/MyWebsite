@@ -173,6 +173,7 @@ h3 {
   margin: 10px 10px 0px 0px;
   background-color: #130f49;
   color: white;
+  border: none;
 }
 .global_button_fill:hover {
   border: 2px solid #130f49;

@@ -187,6 +187,7 @@ h3 {
   @include global_button;
   background-color: #130f49;
   color: white;
+  border: none;
   &:hover {
     border: 2px solid #130f49;
     color: #130f49;
@@ -1008,3 +1009,4 @@ h3 {
     width: 0;
   }
 }
+
