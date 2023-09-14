@@ -9,7 +9,7 @@ const AboutPage = () => {
             <p>-NICE TO MEET YOU!</p>
             <h2>Anil Wagle</h2>
             <p>Full stack Web Developer</p>
-            <button className="global_button_fill">Got a Project?</button>
+            <button className="global_button_fill" onClick={()=>window.location.href = '#contact'}>Got a Project?</button>
           </div>
           <div className="right">
             <p>
