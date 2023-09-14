@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  user-select: none;
+  user-select:none;
 }
 
 body,
@@ -188,12 +188,8 @@ h3 {
   background-color: #130f49;
   color: white;
   border: none;
-  &:hover {
-    border: 2px solid #130f49;
-    color: #130f49;
-    background-color: transparent;
-  }
 }
+
 
 .global_button_nofill {
   @include global_button;
@@ -201,20 +197,9 @@ h3 {
   color: #130f49;
   width: 130px;
   background-color: transparent;
-  &:hover {
-    background-color: #130f49;
-    color: white;
-  }
 }
 
 
-.resume_button{
-  background-color: rgb(174, 0, 174);
-  color: white;
-  padding: 2px;
-  border: none;
-
-}
 
 //Homepage Container---------------------------------------------------------------
 .homepage_container {
@@ -1010,3 +995,26 @@ h3 {
   }
 }
 
+
+@media screen and (min-width:760px) {
+  .global_button_fill{
+    &:hover {
+      border: 2px solid #130f49;
+      color: #130f49;
+      background-color: transparent;
+    }
+  }
+  .global_button_nofill{
+    &:hover{
+      &:hover {
+        background-color: #130f49;
+        color: white;
+      }
+    }
+  }
+}
+
+html.touch *:hover {
+  color: inherit !important;
+  background: inherit !important;
+}
