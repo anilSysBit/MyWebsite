@@ -30,7 +30,6 @@ const ExperienceListing = () => {
   ];
 
   const handleClick = (id) => {
-    console.log(id);
     setSelectedId(id);
   };
   const Opener = ({ item, onClose }) => {

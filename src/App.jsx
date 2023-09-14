@@ -4,6 +4,7 @@ import './styles/index.css'
 import SideBar from './Components/SideBar'
 import SideBarMobile from './Components/SideBarMobile';
 import AboutPage from './Pages/AboutPage';
+import Services from './Pages/Services';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <SideBarMobile/>
         <Homepage/>
         <AboutPage/>
+        <Services/>
         </div>
       </div>
     </>
