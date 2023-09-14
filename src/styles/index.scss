@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body,
@@ -46,6 +47,7 @@ h3 {
 .active {
   color: var(--blue_color);
 }
+
 
 .container {
   width: 100%;
@@ -196,11 +198,21 @@ h3 {
   @include global_button;
   border: 2px solid #130f49;
   color: #130f49;
+  width: 130px;
   background-color: transparent;
   &:hover {
     background-color: #130f49;
     color: white;
   }
+}
+
+
+.resume_button{
+  background-color: rgb(174, 0, 174);
+  color: white;
+  padding: 2px;
+  border: none;
+
 }
 
 //Homepage Container---------------------------------------------------------------

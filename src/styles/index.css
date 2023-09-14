@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 body,
@@ -187,11 +190,19 @@ h3 {
   margin: 10px 10px 0px 0px;
   border: 2px solid #130f49;
   color: #130f49;
+  width: 130px;
   background-color: transparent;
 }
 .global_button_nofill:hover {
   background-color: #130f49;
   color: white;
+}
+
+.resume_button {
+  background-color: rgb(174, 0, 174);
+  color: white;
+  padding: 2px;
+  border: none;
 }
 
 .homepage_container {

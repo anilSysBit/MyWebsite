@@ -48,7 +48,6 @@ const SideBar = () => {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-
             <div className="copyright_container">
                 <div className="social_media_handle">
                     <a target='_blank' href="https://www.facebook.com/profile.php?id=100005517855446"><FacebookIcon/></a>

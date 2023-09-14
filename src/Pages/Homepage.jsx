@@ -1,7 +1,9 @@
 import React from 'react'
 import SideBarMobile from '../Components/SideBarMobile'
+import resume from '../assets/MY_RESUME.pdf'
 
 const Homepage = () => {
+
   return (
     <div className="home_main_container" id='home'>
       <span className='abouttag' id='about'></span>
@@ -14,7 +16,7 @@ const Homepage = () => {
           <h1>Hi, I'm <span>Anil!</span><br/> Fullstack Web Developer <br/>from Nepal</h1>
           <p>I am Nepal based Web Developer with Sufficient Trainings</p>
           <div className="button_container">
-            <a href="#contact"><button className='global_button_fill'>Got a Project?</button></a>
+            <a href={resume} download={resume}><button className='global_button_fill'>Download resume</button></a>
             <a href="#contact"><button className='global_button_nofill'>Let's talk</button></a>
           </div>
 
