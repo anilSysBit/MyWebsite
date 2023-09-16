@@ -1,6 +1,36 @@
-import React from 'react'
-
+import React,{useRef,useState} from 'react'
+import emailjs from '@emailjs/browser';
+import {ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const ContactUs = () => {
+    const [toastActive,setToastActive] = useState(false);
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.sendForm('service_0131bml', 'template_179bx7j', form.current, 'pTqcXQ4a0Q5Dl9F5Q')
+        .then((result) => {
+            setToastActive(true);
+            form.current.reset();
+            toast.success('Form submitted successfully!', {
+                position: 'top-right',
+                autoClose: 3000, // Close the toast after 3 seconds
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
+        }, (error) => {
+            toast.error('Error, Form Declined', {
+                position: 'top-right',
+                autoClose: 3000, // Close the toast after 3 seconds
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
+        });
+    };
   return (
     <div className="contact_aw_container" id='contact'>
         <div className="size_manager">
@@ -15,18 +45,30 @@ const ContactUs = () => {
                     <li>Khairahani-1,Chitwan,Nepal</li>
                 </ul>
             </div>
-            <form action="#">
+            <form ref={form} onSubmit={sendEmail}>
                 <div className="form_control">
-                    <input type="text" name='name' placeholder='Enter your name' />
+                    <input type="text" name='user_name' placeholder='Enter your name' required/>
                 </div>
                 <div className="form_control">
-                    <input type="email" name='email' placeholder='example@gmail.com'/>
+                    <input type="email" name='user_email' placeholder='example@gmail.com' required/>
                 </div>
                 <div className="form_control">
-                    <textarea name="message" id="" cols="30" rows="30" placeholder='Write Something......'></textarea>
+                    <textarea name="message" id="" cols="30" rows="30" placeholder='Write Something......' required></textarea>
                 </div>
                 <br/>
                     <button type='submit' className='global_button_fill'>Submit now</button>
+                    <ToastContainer
+                        position="top-right"
+                        autoClose={5000}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="light"
+                        />
             </form>
         </div>
         <div className="contact_gmap_container">
