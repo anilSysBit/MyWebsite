@@ -6,21 +6,21 @@ const Services = () => {
     const data = [
         {
             title:'Web Design',
-            description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur sunt, ipsam cupiditate eaque nemo enim corrupti eveniet, vero vitae cum assumenda, sapiente at velit nobis placeat fugit ratione veniam!',
+            description:'Our web design services are the creative heartbeat of your online presence. Our talented designers blend aesthetics with functionality to craft visually stunning websites that captivate your audience. From user-friendly navigation to responsive layouts, we ensure that your website not only looks fantastic but also delivers an exceptional user experience. Let us transform your ideas into a captivating digital reality.',
             src:'https://th.bing.com/th/id/OIP.GJO4_oO1hvYNIJswPbY4twHaEK?pid=ImgDet&rs=1'
         },
         {
             title:'Backend Development',
-            description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur sunt, ipsam cupiditate eaque nemo enim corrupti eveniet, vero vitae cum assumenda, sapiente at velit nobis placeat fugit ratione veniam!',
+            description:'Behind every great website is a powerful backend, and thats where our expertise shines. Our backend development team engineers robust, efficient, and scalable systems that make your website work seamlessly. From database management to server-side scripting, we ensure that your web application runs smoothly, allowing you to focus on your business while we handle the technical heavy lifting.',
             src:'https://th.bing.com/th/id/OIP.GJO4_oO1hvYNIJswPbY4twHaEK?pid=ImgDet&rs=1'
         },
         {
             title:'Project Management',
-            description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur sunt, ipsam cupiditate eaque nemo enim corrupti eveniet, vero vitae cum assumenda, sapiente at velit nobis placeat fugit ratione veniam!',
+            description:'Our project management services are the compass that guides your web development journey. We take your vision and turn it into a structured plan, coordinating all aspects of the project, from inception to delivery. With a keen eye on timelines, budgets, and quality, we ensure that your project progresses smoothly, keeping you informed every step of the way. Relax, knowing your project is in expert hands.',
             src:'https://th.bing.com/th/id/OIP.GJO4_oO1hvYNIJswPbY4twHaEK?pid=ImgDet&rs=1'
         },{
             title:'Web Development',
-            description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur sunt, ipsam cupiditate eaque nemo enim corrupti eveniet, vero vitae cum assumenda, sapiente at velit nobis placeat fugit ratione veniam!',
+            description:'Building exceptional websites is our passion. Our web development services encompass a wide range of technologies and expertise to bring your online vision to life. Whether its an e-commerce platform, a content management system, or a custom web application, we\'ve got you covered. We take your ideas and turn them into fully functional, high-performance websites that drive results for your business. Your web success starts here.',
             src:'https://th.bing.com/th/id/OIP.GJO4_oO1hvYNIJswPbY4twHaEK?pid=ImgDet&rs=1'
         }
     ]
