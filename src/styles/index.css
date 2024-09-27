@@ -248,7 +248,7 @@ button {
   }
 }
 .homepage_container {
-  height: auto;
+  height: 90vh;
   background-color: var(--homepage);
   display: flex;
   place-items: center;
