@@ -116,7 +116,7 @@ button {
   margin-right: 10px;
 }
 .top_bar_container ul li a {
-  font-size: blue;
+  color: var(--dark_blue);
 }
 
 .sidebar_container {
