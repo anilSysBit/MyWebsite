@@ -6,13 +6,14 @@ import SideBarMobile from './Components/SideBarMobile';
 import AboutPage from './Pages/AboutPage';
 import Services from './Pages/Services';
 import ContactUs from './Pages/ContactUs';
+import TopBar from './Components/TopBar';
 
 function App() {
   return (
     <>
       <div className='container'>
         <div className="side_bar_place">
-          <SideBar/>
+          <TopBar/>
         </div>
         <div className="pages_place">
         <SideBarMobile/>

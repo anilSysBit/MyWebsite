@@ -3,6 +3,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import SideBar from "./SideBar";
+import myimage from '../assets/myppimage.jpg'
+
 // Code of Responsive Navigation for Small Devices
 
 const SideBarMobile = () => {
@@ -38,13 +40,31 @@ const SideBarMobile = () => {
                 width:80%;
                 animation-iteration-count:1;
             }
+                .home{
+                display:flex;
+                place-items:center;
+                place-content:center;
+                column-gap:10px;
+                  img{
+                    height:50px;
+                    width:50px;
+                    border-radius:50%;
+                    object-fit:contain;
+                    object-position:center;
+                    // box-shadow:1px 1px 10px gray;
+                    border:0.5px solid gray;
+                  }
+                }
 
         `}</style>
         <div className="locksidebar">
             {menuState ? <SideBar /> : null}
         </div>
         <div className="name_container">
-          <a href="#home"><h2>Anil Wagle</h2></a>
+          <a className="home" href="#home">
+            <img src={myimage} alt="" />
+            <p>Anil Wagle</p>
+          </a>
         </div>
         <div className="open_off_container" onClick={handleMenuClick}>
           {menuState ? (
