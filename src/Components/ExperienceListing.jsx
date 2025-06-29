@@ -50,7 +50,7 @@ const ExperienceListing = () => {
     );
   };
   return (
-    <div className="anil_aw_experience">
+    <div className="Ishan_aw_experience">
       <div className="size_manager">
         <div className="header">
           <p>-EXPERIENCE</p>

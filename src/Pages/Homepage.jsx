@@ -19,7 +19,7 @@ const Homepage = () => {
         </div>
         <div className="data_container">
           <div className="data_sm">
-            <h1>Hi, I'm <span>Anil!</span><br/> Fullstack Web Developer <br/>from Nepal</h1>
+            <h1>Hi, I'm <span>Ishan!</span><br/>Frontend Web Developer <br/>from Nepal</h1>
             <p>I am Nepal based Web Developer with Sufficient Trainings</p>
             <div className="button_container">
               <a href={resume} download={resume}><button className='global_button_fill'>Download resume</button></a>
@@ -27,17 +27,17 @@ const Homepage = () => {
             </div>
 
             <div className="location_details">
-              <a href="tel:+9779816284342"><p>+977 9816284342</p></a>
-              <a href="mailto:anil.wagle808@gmail.com"><p>anil.wagle808@gmail.com</p></a>
+              <a href="tel:+9779845822329"><p>+977 9845822329</p></a>
+              <a href="mailto:ishanbartaula1223@gmail.com"><p>ishanbartaula1223@gmail.com</p></a>
               <p>Khairahani-1, Chitwan</p>
             </div>
 
-            <div className="social_media_handle">
+            {/* <div className="social_media_handle">
                     <a target='_blank' href="https://www.facebook.com/profile.php?id=100005517855446"><FacebookIcon fontSize='100'/></a>
-                    <a target='_blank' href="https://github.com/anilSysBit"><GitHubIcon fontSize='100'/></a>
-                    <a target='_blank' href="https://twitter.com/anil_code_808"><TwitterIcon fontSize='100'/></a>
-                    <a target='_blank' href="https://www.linkedin.com/in/anil-wagle-a09609224/"><LinkedInIcon fontSize='100'/></a>
-                </div>
+                    <a target='_blank' href="https://github.com/IshanSysBit"><GitHubIcon fontSize='100'/></a>
+                    <a target='_blank' href="https://twitter.com/Ishan_code_808"><TwitterIcon fontSize='100'/></a>
+                    <a target='_blank' href="https://www.linkedin.com/in/Ishan-wagle-a09609224/"><LinkedInIcon fontSize='100'/></a>
+                </div> */}
         </div>
           </div>
       </div>

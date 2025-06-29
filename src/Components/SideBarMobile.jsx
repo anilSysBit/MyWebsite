@@ -3,7 +3,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import SideBar from "./SideBar";
-import myimage from '../assets/myppimage.jpg'
+import myimage from '../assets/ishanbhai.jpg'
 
 // Code of Responsive Navigation for Small Devices
 
@@ -63,7 +63,7 @@ const SideBarMobile = () => {
         <div className="name_container">
           <a className="home" href="#home">
             <img src={myimage} alt="" />
-            <p>Anil Wagle</p>
+            <p>Ishan Bartuala</p>
           </a>
         </div>
         <div className="open_off_container" onClick={handleMenuClick}>

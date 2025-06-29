@@ -3,7 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import myimage from '../assets/myppimage.jpg'
+import myimage from '../assets/ishanbhai.jpg'
 // Side Bar That contains the Navigation and  Social Media Tags and Copyright Details
 // Resopnsive side bar opens after its gets its size
 // Responsive side bar opens from right-left
@@ -36,7 +36,7 @@ const SideBar = () => {
                     <img src={myimage} alt="thumbnail_sidebar" />
                 </div>
                 <div className="name_box">
-                    <h2>Anil Wagle</h2>
+                    <h2>Ishan Bartuala</h2>
                 </div>
             </div>
 
@@ -51,11 +51,11 @@ const SideBar = () => {
             <div className="copyright_container">
                 <div className="social_media_handle">
                     <a target='_blank' href="https://www.facebook.com/profile.php?id=100005517855446"><FacebookIcon/></a>
-                    <a target='_blank' href="https://github.com/anilSysBit"><GitHubIcon/></a>
-                    <a target='_blank' href="https://twitter.com/anil_code_808"><TwitterIcon/></a>
-                    <a target='_blank' href="https://www.linkedin.com/in/anil-wagle-a09609224/"><LinkedInIcon/></a>
+                    <a target='_blank' href="https://github.com/IshanSysBit"><GitHubIcon/></a>
+                    <a target='_blank' href="https://twitter.com/Ishan_code_808"><TwitterIcon/></a>
+                    <a target='_blank' href="https://www.linkedin.com/in/Ishan-wagle-a09609224/"><LinkedInIcon/></a>
                 </div>
-                <p>Copyright©2023.Anil Wagle.<br/>All rights Reserved</p>
+                <p>Copyright©2023.Ishan Bartuala.<br/>All rights Reserved</p>
             </div>
         </div>
     </div>

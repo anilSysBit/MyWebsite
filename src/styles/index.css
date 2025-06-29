@@ -396,16 +396,16 @@ button {
   color: orange;
   cursor: pointer;
 }
-.about_page_container .size_manager .anil_aw_counter {
+.about_page_container .size_manager .Ishan_aw_counter {
   width: 100%;
   margin-bottom: 50px;
 }
-.about_page_container .size_manager .anil_aw_counter ul {
+.about_page_container .size_manager .Ishan_aw_counter ul {
   display: flex;
   justify-content: space-around;
   height: 100%;
 }
-.about_page_container .size_manager .anil_aw_counter ul li {
+.about_page_container .size_manager .Ishan_aw_counter ul li {
   position: relative;
   list-style: none;
   height: 200px;
@@ -419,7 +419,7 @@ button {
   overflow: hidden;
   cursor: pointer;
 }
-.about_page_container .size_manager .anil_aw_counter ul li::before {
+.about_page_container .size_manager .Ishan_aw_counter ul li::before {
   content: "";
   position: absolute;
   top: 0;
@@ -433,34 +433,34 @@ button {
   transition: transform 0.6s;
   z-index: 3;
 }
-.about_page_container .size_manager .anil_aw_counter ul li:hover::before {
+.about_page_container .size_manager .Ishan_aw_counter ul li:hover::before {
   z-index: 1;
   transform: rotate3d(0, 0, 1, 25deg) translate3d(0, 200%, 0);
 }
-.about_page_container .size_manager .anil_aw_counter ul li h1 {
+.about_page_container .size_manager .Ishan_aw_counter ul li h1 {
   color: var(--dark_blue);
   font-family: var(--inter);
   font-size: 40px;
 }
-.about_page_container .size_manager .anil_aw_counter ul li p {
+.about_page_container .size_manager .Ishan_aw_counter ul li p {
   text-transform: uppercase;
 }
-.about_page_container .size_manager .anil_aw_counter ul li:first-child {
+.about_page_container .size_manager .Ishan_aw_counter ul li:first-child {
   background-color: #d3f4ec;
 }
-.about_page_container .size_manager .anil_aw_counter ul li:nth-child(2) {
+.about_page_container .size_manager .Ishan_aw_counter ul li:nth-child(2) {
   background-color: #fce8d4;
 }
-.about_page_container .size_manager .anil_aw_counter ul li:last-child {
+.about_page_container .size_manager .Ishan_aw_counter ul li:last-child {
   background-color: #e3f9e0;
 }
 
-.anil_aw_experience {
+.Ishan_aw_experience {
   width: 100%;
   float: left;
   background-color: #f3f9ff;
 }
-.anil_aw_experience .header h1 {
+.Ishan_aw_experience .header h1 {
   font-size: 30px;
   font-family: var(--karla);
   color: var(--dark_blue);
@@ -763,7 +763,7 @@ button {
   .services_listing ul li {
     width: 50%;
   }
-  .anil_aw_experience .size_manager {
+  .Ishan_aw_experience .size_manager {
     padding: 50px;
   }
 }
@@ -787,10 +787,10 @@ button {
   .services_aw_container .size_manager {
     padding: 30px;
   }
-  .anil_aw_experience .size_manager {
+  .Ishan_aw_experience .size_manager {
     padding: 30px;
   }
-  .anil_aw_experience .size_manager .aw_experience_listing ul li .title {
+  .Ishan_aw_experience .size_manager .aw_experience_listing ul li .title {
     margin-top: 2px;
   }
 }
@@ -860,30 +860,30 @@ button {
     margin-top: 50px;
     width: 100%;
   }
-  .about_page_container .size_manager .anil_aw_counter {
+  .about_page_container .size_manager .Ishan_aw_counter {
     float: left;
   }
-  .about_page_container .size_manager .anil_aw_counter ul {
+  .about_page_container .size_manager .Ishan_aw_counter ul {
     display: block;
   }
-  .about_page_container .size_manager .anil_aw_counter ul li {
+  .about_page_container .size_manager .Ishan_aw_counter ul li {
     width: 100%;
     margin-top: 10px;
   }
-  .about_page_container .size_manager .anil_aw_counter ul li::before {
+  .about_page_container .size_manager .Ishan_aw_counter ul li::before {
     display: none;
   }
-  .about_page_container .anil_aw_experience .aw_experience_listing ul {
+  .about_page_container .Ishan_aw_experience .aw_experience_listing ul {
     display: block;
   }
-  .about_page_container .anil_aw_experience .aw_experience_listing ul li {
+  .about_page_container .Ishan_aw_experience .aw_experience_listing ul li {
     width: 100%;
     padding: 0px 0px 20px 0px;
   }
-  .about_page_container .anil_aw_experience .aw_experience_listing ul li div {
+  .about_page_container .Ishan_aw_experience .aw_experience_listing ul li div {
     width: 100%;
   }
-  .anil_aw_experience .size_manager {
+  .Ishan_aw_experience .size_manager {
     padding: 20px;
   }
   .services_aw_container .size_manager {

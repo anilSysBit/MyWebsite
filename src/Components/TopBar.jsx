@@ -1,5 +1,5 @@
 import React from 'react'
-import MyAvatar from '../assets/myppimage.jpg'
+import MyAvatar from '../assets/ishanbhai.jpg'
 
 const TopBar = () => {
   return (
